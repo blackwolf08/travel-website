@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 html,
@@ -19,25 +22,40 @@ section {
 }
 
 .bg {
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
   filter: grayscale(0.5);
+  position: relative;
 }
 
-.bg-1 {
-  background-attachment: scroll;
+
+.bg-1::before {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   background-image: url("./images/activity-adventure-back-view-2106776.jpg");
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  transform-style: inherit;
+  display: block;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
 }
 
 section.bg.bg-1 h1 {
   color: white;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  margin: auto;
+  
 }
 
 /* Self learning 
@@ -60,22 +78,75 @@ let results = Splitting({
   }
 }
 
-.bg-2 {
+.bg-2::before {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("./images/activity-adventure-back-view-2106776.jpg");
+  display: block;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
   background-image: url("./images/aircraft-aircraft-wing-airplane-2007401.jpg");
 }
 
-.bg-3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.bg-3::before {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("./images/activity-adventure-back-view-2106776.jpg");
+  display: block;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
   background-image: url("./images/ancient-arch-architecture-2087391.jpg");
 }
 
-.bg-4 {
+.bg-4::before {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("./images/activity-adventure-back-view-2106776.jpg");
+  display: block;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
   background-image: url("./images/coconut-trees-couple-daylight-2174656.jpg");
 }
 
-.bg-5 {
+.bg-5::before {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("./images/activity-adventure-back-view-2106776.jpg");
+  display: block;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
   background-image: url("./images/clouds-daylight-environment-2082949.jpg");
 }
 
