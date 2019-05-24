@@ -40,6 +40,14 @@ section.bg.bg-1 h1 {
   color: white;
 }
 
+/* Self learning 
+in JS
+let results = Splitting({
+    target: target,
+    by: 'chars/words/lines/items',
+    if by items then, matching: 'li'
+}) */
+
 .splitting .char {
   animation: slide-in 1s cubic-bezier(0.5, 0, 0.5, 1) both;
   animation-delay: calc(60ms * var(--char-index));
@@ -57,6 +65,9 @@ section.bg.bg-1 h1 {
 }
 
 .bg-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url("./images/ancient-arch-architecture-2087391.jpg");
 }
 
